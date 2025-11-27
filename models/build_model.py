@@ -73,7 +73,7 @@ model.compile(
 )
 
 history = model.fit(
-    train_ds.batch(128),
+    train_ds,
     epochs=10,
     validation_data=test_ds,
     verbose=1
